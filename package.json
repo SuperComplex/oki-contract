@@ -1,0 +1,27 @@
+{
+  "name": "nft-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network ropsten",
+    "rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
+    "deployMain": "npx hardhat run scripts/deploy.js --network mainnet",
+    "hardhat": "npx hardhat node"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "chai": "^4.3.4",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.6.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0"
+  }
+}
